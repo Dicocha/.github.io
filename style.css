@@ -1,0 +1,110 @@
+*{
+	background-color: #eeedf3;
+	color: #010103;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+nav {
+	background: transparent;
+	backdrop-filter: blur(15px);
+	position: fixed;
+	width: 100%;
+	top: 0px;
+}
+
+nav a{
+	background: transparent;
+	background-color: #eeedf3;
+	display: inline-block;
+	text-decoration: none;
+	color: #010103;
+	margin: 10px 50px;
+	padding: 5px 15px;
+	border-radius: 30px;
+}
+
+nav a:hover {
+	background-color: #010103;
+	color: #eeedf3;
+}
+
+.banner {
+    background: url(Img/Banner.jpg);
+	background-size: contain;
+	background-repeat: repeat;
+	background-position: center;
+	height: 250px;
+}
+
+main {
+	display: grid;
+	align-items: center;
+	place-content: center;
+}
+
+.Cont-Principal {
+	box-shadow: #010103 0px 5px 15px;
+	display: grid;
+	place-items: center;
+	justify-content: center;
+	width: 1000px;
+}
+
+h1 {
+	font-size: 100px;
+	font-weight: 600px;
+	font-family: ;
+	padding: 25px;
+	margin: 50px;
+	color: transparent;
+	background-color: #eeedf3;
+	background-image: url(http://cm1.narvii.com/6190/fdf75e984f4f61c22cd35a7740843e5854b3d16b_00.jpg);
+	background-size: contain;
+	background-repeat: repeat;
+	-webkit-background-clip: text;
+	background-clip: text;
+}
+
+.Cont-Historia {
+	width: 800px;
+	height: auto;
+}
+
+.Cont-Historia p { 
+	text-align: justify;
+}
+
+.video {
+	float: left;
+	margin-right: 15px;
+	width: 400px;
+	height: 200px;
+}
+
+.Cont-fanarts {
+	display: grid;
+	place-items: center;
+}
+
+.Cont-fanarts img {
+	width: 75%;
+	height: 75%;
+}
+
+#cancion{
+	border-radius: 12px;
+	width: 800px;
+	height: 450px;
+}
+
+footer{
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+footer p {
+	color: #010103;
+	padding: 25px;
+}
