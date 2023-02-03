@@ -1,43 +1,63 @@
 *{
-	background-color: #eeedf3;
+	background-color: #eeedf4;
 	color: #010103;
 	box-sizing: border-box;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+	margin: 0px;
+}
+
+h1 {
+	font-size: 70px;
+	font-weight: 600;
+}
+
+h2 {
+	width: 100%;
 	text-align: center;
 }
 
 nav {
-	background: transparent;
-	backdrop-filter: blur(15px);
 	position: fixed;
+	box-shadow: #010103 0px 0px 2px;
 	width: 100%;
-	top: 0px;
+	top: 0px; left: 0px;
 }
 
-nav a{
-	background: transparent;
-	background-color: #eeedf3;
+.href {
+	justify-content: center;
+	align-items: center;
+	gap: 75px;
+	margin: 0px 120px 0px 120px;
+}
+
+nav img {
+	float: left;
+	width: 60px;
+	margin: 10px;
+}
+
+.href a{
 	display: inline-block;
+	padding: 20px;
+	margin: 0px 50px 0px 50px;
 	text-decoration: none;
+	font-weight: 300;
 	color: #010103;
-	margin: 10px 50px;
-	padding: 5px 15px;
-	border-radius: 30px;
+	text-align: center;
+	transition: all 0.2s;
 }
 
-nav a:hover {
+.href a:hover {
 	background-color: #010103;
 	color: #eeedf3;
 }
 
-.banner {
-    background: url(Img/Banner.jpg);
-	background-size: contain;
-	background-repeat: repeat;
-	background-position: center;
-	height: 250px;
-}
-
 main {
+	background: url(https://i.pinimg.com/736x/e7/04/94/e704942cbde85553723e860509d3118c--pac-quotes-dope-quotes.jpg);
 	display: grid;
 	align-items: center;
 	place-content: center;
@@ -49,30 +69,20 @@ main {
 	place-items: center;
 	justify-content: center;
 	width: 1000px;
-}
-
-h1 {
-	font-size: 100px;
-	font-weight: 600px;
-	font-family: ;
-	padding: 25px;
-	margin: 50px;
-	color: transparent;
-	background-color: #eeedf3;
-	background-image: url(http://cm1.narvii.com/6190/fdf75e984f4f61c22cd35a7740843e5854b3d16b_00.jpg);
-	background-size: contain;
-	background-repeat: repeat;
-	-webkit-background-clip: text;
-	background-clip: text;
+	margin: 100px;
+	flex-wrap: wrap;
 }
 
 .Cont-Historia {
 	width: 800px;
 	height: auto;
+	min-width: 300px;
 }
 
 .Cont-Historia p { 
 	text-align: justify;
+	font-size: 20px;
+	margin: 10px;
 }
 
 .video {
@@ -82,29 +92,57 @@ h1 {
 	height: 200px;
 }
 
-.Cont-fanarts {
-	display: grid;
-	place-items: center;
+.video2 {
+	float: right;
+	margin-left: 15px;
+	width: 400px;
+	height: 200px;
 }
 
-.Cont-fanarts img {
-	width: 75%;
-	height: 75%;
+.Cont-musica {
+	width: 800px;
+	gap: 20px;
+}
+
+.Cont-musica img {
+	width: 150px;
+	height: 150px;
+}
+
+.bMulti {
+	border: 0px;
+}
+
+.Cont-multimedia {
+	display: flex;
+	flex-wrap: wrap;
 }
 
 #cancion{
+	float: right;
 	border-radius: 12px;
-	width: 800px;
-	height: 450px;
+	width: 300px;
+	height: 630px;
+	margin-bottom: 50px;
+}
+
+.Cont-Peliculas {
+	width: 900px;
+	gap: 20px;
+	margin-bottom: 20px;
+}
+
+.Cont-Peliculas img {
+	width: 200px;
+	height: 300px;
 }
 
 footer{
-	text-align: center;
-	margin: 0;
-	padding: 0;
+    display: block;
 }
 
 footer p {
-	color: #010103;
-	padding: 25px;
+	box-shadow: #010103 0px -1px 1px;
+	padding: 27px;
+	margin: 0px;
 }
