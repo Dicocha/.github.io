@@ -127,8 +127,7 @@ main {
 }
 
 .Cont-Peliculas {
-	width: 900px;
-	gap: 20px;
+	width: 100%;
 	margin-bottom: 20px;
 }
 
@@ -136,6 +135,84 @@ main {
 	width: 200px;
 	height: 300px;
 }
+
+/* Inicio del Carrusel */
+.Cont-Carrusel {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.carousel-wrapper {
+    position: relative;
+    width: 280px;
+    height: 300px;
+}
+
+.carousel-item {
+    position: absolute;
+    top: 0; left: 0;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-img {
+    width: 200px;
+    height: 300px;
+    border: 0px;
+    padding: 0px;
+	margin-left: 40px;
+}
+
+.arrow {
+    width: 100%;
+    text-decoration: none;
+    font-size: 40px;
+}
+  
+.arrow-prev {
+    color: #010103;
+    transform: rotate(0deg);
+    width: auto;
+    position: absolute;
+    top: 40%;
+    left: 0%;
+    width: auto;
+}
+
+.arrow-next {
+    color: #010103;
+    transform: rotate(0deg);
+    width: auto;
+    position: absolute;
+    top: 40%;
+    left: 100%;
+    width: auto;
+}
+
+.carousel-item img {
+    width: 200px;
+    height: 300px;
+}
+  
+[id^= "item"] { display: none; }
+
+.item-1 {
+    z-index: 2;
+    opacity: 1;
+}
+
+*:target ~ .item-1{ opacity: 0; }
+#item-1:target ~ .item-1 { opacity: 1; }
+  
+#item-2:target ~ .item-2, #item-3:target ~ .item-3,  
+#item-4:target ~ .item-4, #item-5:target ~ .item-5,
+#item-6:target ~ .item-6 {
+    z-index: 3;
+    opacity: 1;
+}
+
+/* Fin del Carrusel */
 
 footer{
     display: block;
