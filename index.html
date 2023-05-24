@@ -1,183 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
-    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="#">
     <link rel="stylesheet" href="style.css">
-    <title>2Pac</title>
+    <script src="scripts.js"></script>
+    <title>Survey Form</title>
 </head>
+
 <body>
-    <nav>
-        <a href="#Principal">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/2Pac-Logo.svg/1280px-2Pac-Logo.svg.png" alt="2Pac">
-        </a>
-        <div class="href">
-            <a href="#Historia">Historia</a>
-            <a href="#Música">Música</a>
-            <a href="#Peliculas">Peliculas</a>
+    <form id="survey-form">
+        <h1 class="title">Survey Form</h1>
+
+        <label for="name" class="label"> Name: </label>
+        <input type="text" name="name" class="input" placeholder="Your name" id="name"  required>
+        
+        <label for="number" class="label">Age: </label>
+        <input type="number" name="number" class="input" min="0" max="100" placeholder="Age" id="Age" required>
+        
+        <label for="Sex" class="label">Sex: </label>
+        <div class="Sex">
+            <label for="Woman">Woman 
+                <input type="radio" name="Sex" value="Woman">
+            </label>
+            
+            <label for="Men">Man 
+                <input type="radio" name="Sex" value="Men">
+            </label>
         </div>
-    </nav>
-    <main id="Principal">
-        <article class="Cont-Principal" id="Principal">
-            <section class="Cont-Historia">
-                <h1 id="Historia">Tupac Amaru Shakur</h1>
-                <p>
-                    <embed class="video" src="https://www.youtube-nocookie.com/embed/lQrPreNScdU" frameborder="0"></iframe>
-                        2Pac nació en Nueva York, el 16 de junio de 1971 y murió en Las Vegas, Nevada, el 13 de septiembre de 1996. Es una leyenda en el rap. Con influencias desde la infancia por parte de sus padres, miembros del grupo Black Panthers. Gran parte de la obra de Shakur se ha destacado por abordar los problemas sociales que plagaban los centros urbanos, por lo cual también es considerado un símbolo de resistencia y activismo contra la desigualdad. <br><br>
-                    Pasó gran parte de su niñez en continuos viajes a lo largo del país, en compañía de sus hermanos y su madre. A pesar de vivir en la pobreza, consiguió entrar en la prestigiosa escuela de Bellas Artes de Baltimore, donde, rapeando y actuando en directo, comenzó a desarrollarse su creatividad. Antes de su graduación tuvo que trasladarse junto a su familia a California. <br><br>
-                    El primer disco de 2Pac llegó en el año 1992: se titulaba 2Pacalypse Now y llegó a ser disco de oro con el single Brenda's got a baby. Ya este primer disco provocó revuelo por sus letras. La popularidad de 2Pac aumentó considerablemente con su aparición en un par de películas, Juice y Poetic Justice. En el año 1993 se lanzó Stricly 4 my N.I.G.G.A.Z., segundo álbum del rapero, con el que consiguió colocar un par de singles en el top 15 estadounidense. <br><br>
-                    <iframe class="video2" src="https://www.youtube.com/embed/58V_Rz3EfyM" frameborder="0"></iframe>
-                    Su carrera seguía una línea ascendente, pero varios incidentes la alteraron. Antes de dedicarse a la música, 2Pac no tenía ningún antecedente policial. En 1992 fue arrestado por su implicación en una pelea que acabó con la muerte accidental (por una bala perdida) de un niño de seis años, aunque fue puesto en libertad poco después. <br><br>
-                    En 1993 se le detuvo acusado de disparar a dos policías que no estaban de servicio. El caso fue sobreseído, pero un mes más tarde fue acusado falsamente de abusar sexualmente de una admiradora en 1994. El día antes de que se hiciera pública la sentencia, fue tiroteado por un par de individuos en unos estudios de Nueva York, en el suelo reconoció a Puffy y Biggy, ellos no le ayudaron. <br><br>
-                    Estaba en la cárcel cuando se editó su tercer álbum, Me against the world, que llegó al número uno y leyó El Príncipe de Maquiavelo, por el cual, más adelante, formará su partido político. Desde la cárcel, tras escuchar Who shot ya de B.I.G. Estaba seguro de sus sospechas. Antes de que acabara el año, Suge Knight, presidente de Death Row Records, pagó una fianza. <br><br>
-                    Como era de prever, 2Pac fichó con la productora Death Row Records y debutó en el sello con All eyez on me (1996), un disco doble que llegó rápidamente al número uno, logrando el quinto disco de platino pasados unos meses. En verano de 1996 actuó además en dos películas, Bullet y Gridlock. <br><br>
-                    <iframe class="video" src="https://www.youtube.com/embed/wWZuqi3ZwB8" frameborder="0"></iframe>
-                    A la salida de un combate de Mike Tyson en Las Vegas, en septiembre de ese año, fue tiroteado cuando iba en el asiento del copiloto del coche de Suge Knight. Herido de gravedad, fue ingresado en un hospital, donde falleció seis días después.
-                </p>
-                <p></p>
-            </section>
-            <section class="Cont-musica">
-                <h2 id="Música">Música</h2>
-                <div>
-                    <iframe id="cancion" src="https://open.spotify.com/embed/artist/1ZwdS5xdxEREPySFridCfh?utm_source=generator&theme=0" frameBorder="0" allowfullscreen="" allow="" loading="lazy"></iframe>
-                    <div class="Cont-multimedia">
-                        <button class="bMulti">
-                            <a class="aMulti" href="https://open.spotify.com/album/5Ijk8JGsEkwCZd5i0Iy09a" target="_blank">
-                                <img src="Img/Albunes/2Pacalypse.jpg" alt="2Pacalypse Now"/>
-                            </a>
-                        </button>
-                        <button class="bMulti">
-                            <a class="aMulti" href="https://open.spotify.com/album/7FK1855C3n1Q0RKbmvl7ll" target="_blank">
-                                <img src="Img/Albunes/Strictly 4 My N.I.G.G.A.Z..jpg" alt="Strictly 4 My N.I.G.G.A.Z."/>
-                            </a>
-                        </button>
-                        <button  class="bMulti">
-                            <a class="aMulti" href="https://open.spotify.com/album/3OrucS4sHv6Bl9GS4rafEk" target="_blank">
-                                <img src="Img/Albunes/Me Against the world.jpg" alt="Me Against the World"/>
-                            </a>
-                        </button>
-                        <button class="bMulti">
-                            <a class="aMulti" href="https://open.spotify.com/album/78iX7tMceN0FsnmabAtlOC" target="_blank">
-                                <img src="Img/Albunes/All eyes on me.jpg" alt="All Eyez on Me"/>
-                            </a>
-                        </button>
-                        <button class="bMulti">
-                            <a class="aMulti" href="https://open.spotify.com/album/2gWrUaBkh1uQARjbjvUGNp" target="_blank">
-                                <img src="Img/Albunes/The Don Killuminati.jpg" alt="The Don Killuminati: The 7 Day Theory"/>
-                            </a>
-                        </button>
-                        <button class="bMulti">
-                            <a class="aMulti" href="https://open.spotify.com/album/7zURSbIVZ5vl3NIKkrVRvl" target="_blank">
-                                <img src="Img/Albunes/R U still down.jpg" alt="R U Still Down? (Remember Me)"/>
-                            </a>
-                        </button>
-                        <button class="bMulti">
-                            <a class="aMulti" href="https://open.spotify.com/album/79fKra4fmUcktHD2BlUk8e" target="_blank">
-                                <img src="Img/Albunes/Still I Rise.jpg" alt="Still I Rise"/>
-                            </a>
-                        </button>
-                        <button class="bMulti">
-                            <a class="aMulti" href="https://open.spotify.com/album/0uT4bCZS9o5C1ThDa2VxpV" target="_blank">
-                                <img src="Img/Albunes/Until the End of Time.jpg" alt="Until the End of Time"/>
-                            </a>
-                        </button>
-                        <button class="bMulti">
-                            <a class="aMulti" href="https://open.spotify.com/album/5tue3HeaFm6XHyYXhI1kww" target="_blank">
-                                <img src="Img/Albunes/Better Dayz.jpg" alt="Better Dayz"/>
-                            </a>
-                        </button>
-                        <button class="bMulti">
-                            <a class="aMulti" href="https://open.spotify.com/album/5tue3HeaFm6XHyYXhI1kww" target="_blank">
-                                <img src="Img/Albunes/Resurrection.jpg" alt="Tupac: Resurrection [Music From and Inspired By the Motion Picture]"/>
-                            </a>
-                        </button>
-                        <button class="bMulti">
-                            <a class="aMulti" href="https://open.spotify.com/album/33lk2GnP8cJzl7cd1OJrXn" target="_blank">
-                                <img src="Img/Albunes/Loyal to the Game.jpg" alt="Loyal to the Game"/>
-                            </a>
-                        </button>
-                    </div>
-                </div>
-            </section>
-            <section class="Cont-Peliculas">
-                <h2 id="Peliculas">Peliculas</h2>
-                <div class="Cont-Carrusel">
-                    <div class="carousel-wrapper">
-                        <span id="item-1"></span>
-                        <span id="item-2"></span>
-                        <span id="item-3"></span>
-                        <span id="item-4"></span>
-                        <span id="item-5"></span>
-                        <span id="item-6"></span>
 
-                        <div class="carousel-item item-1">
-                        <a href="#item-6" class="arrow-prev arrow">&#10094;</a>
-                        <button class="btn-img">
-                            <a href="https://www.imdb.com/title/tt0104573/?ref_=ext_shr_lnk" target="_blank">
-                            <img src="Img/Peliculas/Juice.jpg" alt="Juice">
-                            </a>
-                        </button>
-                        <a href="#item-2" class="arrow-next arrow">&#10095;</a>
-                        </div>
+        <label for="email" class="label">Email: </label>
+        <input type="email" name="email"  class="input"  placeholder="Your email" id="email" required>
 
-                        <div class="carousel-item item-2">
-                        <a href="#item-1" class="arrow-prev arrow">&#10094;</a>
-                        <button class="btn-img">
-                            <a href="https://www.imdb.com/title/tt0107840/?ref_=ext_shr_lnk" target="_blank">
-                            <img src="Img/Peliculas/Poetic Justice.jpg" alt="Poetic Juice">
-                            </a>
-                        </button>
-                        <a href="#item-3" class="arrow-next arrow">&#10095;</a>
-                        </div>
+        <label for="dropdown" class="label">Sport: </label>
+        <select class="dropdown" placeholder="Sport" id="Sport">
+            <option value="">-- Select a sport --</option>
+            <option value="Swim">Swim</option>
+            <option value="Futball">Futball</option>
+            <option value="Basquet">Basquet</option>
+            <option value="Karate">Karate</option>
+            <option value="Volleyball">Volleyball</option>
+            <option value="Taekwondo">Taekwondo</option>
+            <option value="Cricket">Cricket</option>
+        </select>
 
-                        <div class="carousel-item item-3">
-                        <a href="#item-2" class="arrow-prev arrow">&#10094;</a>
-                        <button class="btn-img">
-                            <a href="https://www.imdb.com/title/tt0109035/?ref_=ext_shr_lnk" target="_blank">
-                            <img src="Img/Peliculas/Above Rim.jpg" alt="Above the Rim">
-                            </a>
-                        </button>
-                        <a href="#item-4" class="arrow-next arrow">&#10095;</a>       
-                        </div>
+        <label for="dropdown" class="label">Province: </label>
+        <select class="dropdown" placeholder="Province" id="Province">
+            <option value="">-- Select a province --</option>
+            <option value="San José">San José</option>
+            <option value="Heredia">Heredia</option>
+            <option value="Cartago">Cartago</option>
+            <option value="Alajuela">Alajuela</option>
+            <option value="Puntarenas">Puntarenas</option>
+            <option value="Limón">Limón</option>
+            <option value="Guanacaste">Guanacaste</option>
+        </select>
 
-                        <div class="carousel-item item-4">
-                        <a href="#item-3" class="arrow-prev arrow">&#10094;</a>
-                        <button class="btn-img">
-                            <a href="https://www.imdb.com/title/tt0115781/?ref_=ext_shr_lnk" target="_blank">
-                            <img src="Img/Peliculas/Bullet.jpg" alt="Bullet">
-                            </a>
-                        </button>
-                        <a href="#item-5" class="arrow-next arrow">&#10095;</a>
-                        </div>
+        <button type="submit" class="btn-submit" onClick="Button()">
+            Submit
+        </button>
+        
+    </form>
 
-                        <div class="carousel-item item-5">
-                        <a href="#item-4" class="arrow-prev arrow">&#10094;</a>
-                            <button class="btn-img">
-                            <a href="https://www.imdb.com/title/tt0118900/?ref_=ext_shr_lnk" target="_blank">
-                                <img src="Img/Peliculas/Gang Related.jpg" alt="Gang Related">
-                            </a>
-                            </button>
-                            <a href="#item-6" class="arrow-next arrow">&#10095;</a>
-                        </div>
-
-                        <div class="carousel-item item-6">
-                            <a href="#item-5" class="arrow-prev arrow">&#10094;</a>
-                            <button class="btn-img">
-                            <a href="https://www.imdb.com/title/tt0119225/?ref_=ext_shr_lnk" target="_blank">
-                                <img src="Img/Peliculas/Gridlockd.jpg" alt="Gridlockd">
-                            </a>
-                            </button>
-                            <a href="#item-1" class="arrow-next arrow">&#10095;</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </article>
-    </main>
-    <footer>
-        <p>Por tu valentía y lucha, eres una gran inspiración para muchos seres.</p>
-    </footer>
 </body>
 </html>
