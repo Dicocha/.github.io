@@ -1,225 +1,83 @@
-*{
-	background-color: #eeedf4;
-	color: #010103;
-	box-sizing: border-box;
-	text-align: center;
-	font-family: Arial, Helvetica, sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Convergence&display=swap');
 
 body {
-	margin: 0px;
+    display: flex;
+    justify-content: center;
+    background-image: url(https://images.pexels.com/photos/1183099/pexels-photo-1183099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
 }
 
-h1 {
-	font-size: 70px;
-	font-weight: 600;
+#survey-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 600px;
+    background: rgba(0, 0, 0, 0.6);
+    gap: 10px;
 }
 
-h2 {
-	width: 100%;
-	text-align: center;
+.Sex {
+    display: flex;
+    gap: 20px;
 }
 
-nav {
-	position: fixed;
-	box-shadow: #010103 0px 0px 2px;
-	width: 100%;
-	top: 0px; left: 0px;
-}
-
-.href {
-	justify-content: center;
-	align-items: center;
-	gap: 75px;
-	margin: 0px 120px 0px 120px;
-}
-
-nav img {
-	float: left;
-	width: 60px;
-	margin: 10px;
-}
-
-.href a{
-	display: inline-block;
-	padding: 20px;
-	margin: 0px 50px 0px 50px;
-	text-decoration: none;
-	font-weight: 300;
-	color: #010103;
-	text-align: center;
-	transition: all 0.2s;
-}
-
-.href a:hover {
-	background-color: #010103;
-	color: #eeedf3;
-}
-
-main {
-	background: url(https://i.pinimg.com/736x/e7/04/94/e704942cbde85553723e860509d3118c--pac-quotes-dope-quotes.jpg);
-	display: grid;
-	align-items: center;
-	place-content: center;
-}
-
-.Cont-Principal {
-	box-shadow: #010103 0px 5px 15px;
-	display: grid;
-	place-items: center;
-	justify-content: center;
-	width: 1000px;
-	margin: 100px;
-	flex-wrap: wrap;
-}
-
-.Cont-Historia {
-	width: 800px;
-	height: auto;
-	min-width: 300px;
-}
-
-.Cont-Historia p { 
-	text-align: justify;
-	font-size: 20px;
-	margin: 10px;
-}
-
-.video {
-	float: left;
-	margin-right: 15px;
-	width: 400px;
-	height: 200px;
-}
-
-.video2 {
-	float: right;
-	margin-left: 15px;
-	width: 400px;
-	height: 200px;
-}
-
-.Cont-musica {
-	width: 800px;
-	gap: 20px;
-}
-
-.Cont-musica img {
-	width: 150px;
-	height: 150px;
-}
-
-.bMulti {
-	border: 0px;
-}
-
-.Cont-multimedia {
-	display: flex;
-	flex-wrap: wrap;
-}
-
-#cancion{
-	float: right;
-	border-radius: 12px;
-	width: 300px;
-	height: 630px;
-	margin-bottom: 50px;
-}
-
-.Cont-Peliculas {
-	width: 100%;
-	margin-bottom: 20px;
-}
-
-.Cont-Peliculas img {
-	width: 200px;
-	height: 300px;
-}
-
-/* Inicio del Carrusel */
-.Cont-Carrusel {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.carousel-wrapper {
-    position: relative;
-    width: 280px;
-    height: 300px;
-}
-
-.carousel-item {
-    position: absolute;
-    top: 0; left: 0;
-    opacity: 0;
-    transition: all 0.5s ease-in-out;
-}
-
-.btn-img {
-    width: 200px;
-    height: 300px;
-    border: 0px;
-    padding: 0px;
-	margin-left: 40px;
-}
-
-.arrow {
-    width: 100%;
-    text-decoration: none;
+.title {
     font-size: 40px;
-}
-  
-.arrow-prev {
-    color: #010103;
-    transform: rotate(0deg);
-    width: auto;
-    position: absolute;
-    top: 40%;
-    left: 0%;
-    width: auto;
+    margin: 20px;
 }
 
-.arrow-next {
-    color: #010103;
-    transform: rotate(0deg);
-    width: auto;
-    position: absolute;
-    top: 40%;
-    left: 100%;
-    width: auto;
+.label {
+    display: inline-block;
+    width: 51%;
+    margin: 0px;
 }
 
-.carousel-item img {
-    width: 200px;
-    height: 300px;
-}
-  
-[id^= "item"] { display: none; }
-
-.item-1 {
-    z-index: 2;
-    opacity: 1;
+::placeholder {
+    text-align: center; 
 }
 
-*:target ~ .item-1{ opacity: 0; }
-#item-1:target ~ .item-1 { opacity: 1; }
-  
-#item-2:target ~ .item-2, #item-3:target ~ .item-3,  
-#item-4:target ~ .item-4, #item-5:target ~ .item-5,
-#item-6:target ~ .item-6 {
-    z-index: 3;
-    opacity: 1;
+.input {
+    display: inline-block;
+    width: 50%;
+    margin-top: 1px;
+    margin-bottom: 5px;
+    text-align: center;
 }
 
-/* Fin del Carrusel */
-
-footer{
-    display: block;
+.dropdown {
+    display: inline-block;
+    width: 50%;
+    background-color: white;
+    border: none;
+    height: 22px;
+    text-align: center;
 }
 
-footer p {
-	box-shadow: #010103 0px -1px 1px;
-	padding: 27px;
-	margin: 0px;
+.btn-submit {
+    background-color: white;
+    padding: 10px;
+    margin: 25px;
+    border-radius: 10px;
+    width: 150px;
+    border: none;
+}
+
+@media only screen and (max-width: 900px) {
+    #survey-form {
+        width: 500px;
+        height: 600px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    #survey-form {
+        width: 400px;
+        height: 550px;
+    }
 }
